@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://img.freepik.com/premium-photo/premium-background-neon-in-wall-light-wall_584200-424.jpg) no-repeat center/cover fixed;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    padding-top: 60px;
+
+}
+
+footer {
+    margin-top: auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    position: fixed;
+    width: 100%;
+    background: #00028079;
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    z-index: 9999;
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.header_logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: 5px solid #0000ffaf;
+    box-shadow: 0px 0px 10px #0000ff80;
+}
+
+.header_nav ul {
+    padding: 0;
+    gap: 40px;
+    display: flex;
+
+}
+
+.header_nav li {
+    list-style: none;
+
+}
+
+.header_nav a {
+    display: block;
+    /* линия под текстом */
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+    font-weight: bold;
+}
+
+.header_nav a:hover {
+    
+    color: purple;
+    transform: scale(1.5);
+    text-shadow: 0px 0px  10px black;
+}
+
+
+/* main */
+/* section1 */
+.section_1 {
+    margin-bottom: 50px;
+}
+
+
+.section_1 .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/fpyydmg2jjbv1ue96bq3.jpg)no-repeat center/cover;
+    box-shadow: 0px 10px 50px purple, 0px 10px 50px purple, inset 0px 0px 100px purple;
+
+}
+
+.section_1 .content .title {
+    font-weight: 700;
+    font-size: 70px;
+    color: white;
+    text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+}
+
+.section_1 .content .span {
+    color: #ce57ce;
+}
+
+/* section2 */
+.section_2 {
+    margin: 50px 0px;
+
+}
+
+.section_2 .cards{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 25px;
+}
+
+.section_2 .card {
+    position: relative;
+    margin: 25px 0;
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    background: #111010a1;
+    box-shadow: 10px 10px 15px purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+.section_2 .card ::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -19px;
+    background: url(https://www.rover.com/blog/wp-content/uploads/black-long-hair-cat-min-1024x683.jpg) no-repeat center/cover;
+    border-radius: 40px;
+    border: 5px solid #0000ffaf;
+    box-shadow: 0px 0px 10px #0000ff80;
+    width: 40px;
+    height: 40px;
+}
+
+
+.section_2 .card ::after {
+    content: "5";
+    position: absolute;
+    top: -8px;
+    right: -19px;
+    background: #ce57ce;
+    border-radius: 50px ;
+    box-shadow: 0px 0px 10px #ce57ce;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.section_2 .card .card_title {
+    width: 100%;
+    max-width: 165px;
+    margin-bottom: 10px;
+}
+
+.section_2 .card .sub_title {
+    color: #ffffff;
+}
+
+/* footer */
+ footer{
+    padding: 20px 0;
+    background: #80008071;
+    box-shadow:
+    rgba(240, 46, 170, 0.4) 0px -5px,
+    rgba(240, 46, 170, 0.3) 0px -10px,
+    rgba(240, 46, 170, 0.2) 0px -15px,
+    rgba(240, 46, 170, 0.1) 0px -20px,
+    rgba(240, 46, 170, 0.05) 0px -25px;
+    
+}
+footer .footer_text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    
+}
